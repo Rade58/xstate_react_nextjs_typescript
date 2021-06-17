@@ -44,7 +44,6 @@
     ]
   },
   "devDependencies": {
-    "eslint-import-resolver-alias": "^1.1.2",
     "node-sass": "^4.14.1"
   }
 }

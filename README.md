@@ -1,70 +1,34 @@
-# INTRO
+# COMPONENT STATE IN REACT
 
-REPO PROJECTA, KOJ ISE RADI TOKOM WORKSHOP-A:
+***
+***
 
-<https://github.com/davidkpiano/frontend-masters-react-workshop>
+digresija, mozda i nije:
 
-AUTOR XSTATE-A IDE KA TOME DA XSTATE BUDE FULLY COMPATIBLILE SA OVIM:
+PRE NEGO TO BILO STA ZAPOCNEMO INSTALIRACEMO OVO U NASEM NEXT PROJECT-U
 
-<https://www.w3.org/TR/scxml/>
+OVO SU SVI PAKETI KOJI SE TICU XSTATE-A
 
-A GIANT SPEC THAT XSTATE FOLLOWS
+- `yarn add xstate @xstate/inspect @xstate/react @xstate/test`
 
-# REACT APP, KOJA JE ACTUAL APP WORKSHOP-A (ODNONO OVO JE PODELJENO U MNOSTVO RAZLICITIH SEKCIJA), SAM KLONIRAO U `/workshop_project` FOLDER
+**SLEDECI PAKETI CE MI MOZDA ZATREBATI A MOZDA I NE, I ONI SE NE TICU DIREKTNO XSTATE-A**
 
-- `git clone git@github.com:davidkpiano/frontend-masters-react-workshop.git`
+- `yarn add @reach/tabs @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome`
 
-- `mv frontend-masters-react-workshop workshop_project` 
+INSTALIRACU I [react-query](https://react-query.tanstack.com/)
 
-- `rm -rf workshop_project/.git`
+- `yarn add react-query`
 
-- `cd workshop_project`
+OVO NECU INSTALIRATI, IAKO JE KORISCENO U WORKSHOP-U, ALI SAMO CU TI NABROJATI OVE DEPANDANCIES:
 
-- `yarn`
+@testing-library/jest-dom
+@testing-library/react
+@testing-library/user-event
+react-markdown
 
-- `yarn start`
+***
+***
 
-<http://localhost:3069>
+DA SE SADA VRATIMO NA TEMU
 
-BICE TI SERVED PAGE SA EXERCISE-OVIMA
-
-- `cd ..`
-
-# ONO STO CE NA KRAJU BITI SAGRADJENO JESTE TIMER APP
-
-MEDJUTIM TI MOZES VIDETI SVA RESENJA I SVE KORAKE
-
-# DODAVNJE ABSOLUTE IMPORTS-A
-
-OVO RADIM JER ZELIM DA KORISTIM KOMPONENTE IZ `workshop_project/src`, A ZELIM LEPSE IMPORTE SA FANCY `@/`
-
-- `code tsconfig.json`
-
-```json
-// DODAO OVO UNDER `"compilerOptions"`
-"baseUrl": ".",
-"paths": {
-  "@/work/*": ["workshop_project/src/*"]
-},
-```
-
-- `yarn add --dev eslint-import-resolver-alias`
-
-- `code .eslintrc`
-
-```json
-// DODAO OVO
-"ignorePatterns": ["node_modules/", ".next/"],
-"settings": {
-  "react": {
-    "version": "detect"
-  },
-  // DODAO OVO
-  "import/resolver": {
-    "alias": {
-      "map": [["@/work", "./workshop_project/src"]],
-      "extensions": [".ts", ".js", ".jsx", ".tsx", ".json"]
-    }
-  }
-}
-```
+CILJ DAKLE JESTE DA SE ODMAH NE PISE CODE, VEC DA SE POSVETI VREME STATE MODELING-U, KORISCENJEM STATE MACHINE-A
