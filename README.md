@@ -1,9 +1,11 @@
-# React, Next.js, Typescript with State Machines and XState
+# INTRO
 
-APP CREATED WITH:
+REPO PROJECTA, KOJ ISE RADI TOKOM WORKSHOP-A:
 
-- `npx create-next-app --ts`
+<https://github.com/davidkpiano/frontend-masters-react-workshop>
 
-DEV DEPNDANCIES:
+AUTOR XSTATE-A IDE KA TOME DA XSTATE BUDE FULLY COMPATIBLILE SA OVIM:
 
-- `yarn add --dev @types/react @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-prettier eslint-import-resolver-alias eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks prettier`
+<https://www.w3.org/TR/scxml/>
+
+A GIANT SPEC THAT XSTATE FOLLOWS
