@@ -23,7 +23,7 @@
     "xstate": "^4.14.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "BROWSER=none PORT=3069 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -44,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "eslint-import-resolver-alias": "^1.1.2",
     "node-sass": "^4.14.1"
   }
 }

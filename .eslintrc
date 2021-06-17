@@ -49,12 +49,7 @@
     },
     "import/resolver": {
       "alias": {
-        "map": [
-          ["@/components", "./components"],
-          ["@/lib", "./lib"],
-          ["@/styles", "./styles"],
-          ["@/util", "./util"]
-        ],
+        "map": [["@/work", "./workshop_project/src"]],
         "extensions": [".ts", ".js", ".jsx", ".tsx", ".json"]
       }
     }
