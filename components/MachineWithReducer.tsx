@@ -50,7 +50,7 @@ const reducer: Reducer<FiniteStatesEnum, ReducerEventEnum> = (state, event) => {
   return nextState;
 };
 
-const Component: FC = () => {
+const MachineWithReducer: FC = () => {
   const [state, dispatch] = useReducer(reducer, FiniteStatesEnum.yellow);
 
   return (
@@ -70,4 +70,4 @@ const Component: FC = () => {
   );
 };
 
-export default Component;
+export default MachineWithReducer;
